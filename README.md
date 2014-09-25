@@ -1,6 +1,12 @@
 docker-memcached
 ================
 
+* **OS**: [CentOS 6](https://github.com/CentOS/sig-cloud-instance-images/blob/e1ea1c01abea5f402c650caf12049a711373b27a/docker/Dockerfile)
+* **Memcached**: [1.4.20](http://memcached.org/files/)
+
+## Image
+[https://registry.hub.docker.com/u/esmelab/memcached/](https://registry.hub.docker.com/u/esmelab/memcached/)
+
 # Clone
 
     git clone https://github.com/ESMELab/docker-memcached.git
