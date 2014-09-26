@@ -38,10 +38,7 @@ EXPOSE 11211
 
 # Default Memcached run command arguments
 # 1024 = 1GB
-CMD ["-m", "1024"]
+CMD ["memcached", "-m", "1024"]
 
 # Set the user to run Memcached daemon
 USER nobody
-
-# Set the entrypoint to memcached binary
-ENTRYPOINT memcached

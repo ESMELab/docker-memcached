@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t="esmelab/memcached"
+docker build -t esmelab/memcached .

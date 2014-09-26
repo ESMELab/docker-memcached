@@ -20,8 +20,13 @@ or
     sh ./build.sh
 
 # Run
+(1 GB of RAM to memcached | see Defaults)
 
     docker run --name esmelab-memcached -d -p 45001:11211 esmelab/memcached
+
+or (512 MB of RAM to memcached)
+
+    docker run --name esmelab-memcached -d -p 45001:11211 esmelab/memcached memcached -m 512
 
 or
 
@@ -55,3 +60,7 @@ output | ✗
     Trying 192.168.59.103...
     telnet: connect to address 192.168.59.103: Connection refused
     telnet: Unable to connect to remote host
+
+# Defaults
+
+* **Memcached RAM**: 1GB
